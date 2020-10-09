@@ -2,38 +2,122 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta name="description"
+		content="“Why’d you have to go and make things so complicated?” - Avril Lavigne, implementing Angular forms in 2019
 
-		<title>reveal.js</title>
+Forms are such a basic part of web applications; how did they get so complicated? This talk will walk through Angular template driven vs. reactive forms and use cases for their implementation, basic & more complex form-validation, & custom component implementations like typeahead and date-pickers. This talk will also include some useful workarounds for those more complex PITA requirements that always seem to pop up in projects.">
+	<meta name="keywords"
+		content="Jennifer Wadella, software engineer, women in tech speaker, female software engineer, female speaker, female founder, non-profit consultant, female coder, Kansas City Women in Technology, kcwit, kcwit founder, women engineers, girls in tech, women in tech, coding &amp; cocktails, coding &amp; cupcakes, CoderDojoKC">
+	<meta itemprop="name" content="Handling Angular Forms Without Losing Your Sanity">
+	<meta itemprop="description"
+		content="“Why’d you have to go and make things so complicated?” - Avril Lavigne, implementing Angular forms in 2019
+
+Forms are such a basic part of web applications; how did they get so complicated? This talk will walk through Angular template driven vs. reactive forms and use cases for their implementation, basic & more complex form-validation, & custom component implementations like typeahead and date-pickers. This talk will also include some useful workarounds for those more complex PITA requirements that always seem to pop up in projects.">
+	<meta itemprop="image" content="http://tehfedaykin.github.io/Angular2Forms/img/cover.png">
+	<meta property="og:title" content="Handling Angular Forms Without Losing Your Sanity">
+	<meta property="og:type" content="website">
+	<meta property="og:image" content="http://tehfedaykin.github.io/Angular2Forms/img/cover.png">
+	<meta property="og:url" content="http://tehfedaykin.github.io/Angular2Forms">
+	<meta property="og:description"
+		content="“Why’d you have to go and make things so complicated?” - Avril Lavigne, implementing Angular forms in 2019
+
+Forms are such a basic part of web applications; how did they get so complicated? This talk will walk through Angular template driven vs. reactive forms and use cases for their implementation, basic & more complex form-validation, & custom component implementations like typeahead and date-pickers. This talk will also include some useful workarounds for those more complex PITA requirements that always seem to pop up in projects.">
+	<meta property="twitter:card" content="summary">
+	<meta property="twitter:title" content="Handling Angular Forms Without Losing Your Sanity">
+	<meta property="twitter:creator" content="@likeOMGitsFEDAY">
+	<meta property="twitter:image" content="http://tehfedaykin.github.io/Angular2Forms/img/cover.png">
+	<meta property="twitter:url" content="http://tehfedaykin.github.io/Angular2Forms">
+	<meta property="twitter:description"
+		content="“Why’d you have to go and make things so complicated?” - Avril Lavigne, implementing Angular forms in 2019
+
+Forms are such a basic part of web applications; how did they get so complicated? This talk will walk through Angular template driven vs. reactive forms and use cases for their implementation, basic & more complex form-validation, & custom component implementations like typeahead and date-pickers. This talk will also include some useful workarounds for those more complex PITA requirements that always seem to pop up in projects.">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+
+		<title>The Is My Talk Title</title>
 
 		<link rel="stylesheet" href="dist/reset.css">
 		<link rel="stylesheet" href="dist/reveal.css">
 		<link rel="stylesheet" href="dist/theme/black.css" id="theme">
 
 		<!-- Theme used for syntax highlighted code -->
-		<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
+		<link rel="stylesheet" href="plugin/highlight/zenburn.css" id="highlight-theme">
+		<link rel="stylesheet" href="plugin/prism/okaidia.css">
+
 	</head>
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<section id="title">
+					<h1>This is My Talk Title</h1>
+					<p>Jennifer Wadella</p>
+				</section>
+				<section id="me">
+					<div class="speaker-title">
+						<div class="flex-1">
+							<img class="circle plain" src="img/jennifer-wadella-photo.jpg" alt="">
+						</div>
+						<div class="flex-2">
+							<div class="">
+								<h2>Jennifer Wadella</h2>
+								<h3><a href="http://twitter.com/likeOMGitsFEDAY">@likeOMGitsFEDAY</a></h3>
+							</div>
+						</div>
+					</div>
+					<ul class="small">
+						<li>Director of Angular Development at <a href="https://www.bitovi.com">Bitovi</a></li>
+						<li>Angular GDE</li>
+						<li>International Speaker (pre-pandemic)</li>
+						<li>Kombucha brewin' crazy plant lady</li>
+					</ul>
+					<div class="warning">
+						<img class="plain" src="img/mature.png" alt="">
+						<p class="smaller"> <i>This talk may contain strong language, harsh truths, and serious passion.</i></p>
+					</div>
+				</section>
+				<section data-markdown>
+                    <script type="text/template">
+						```typescript
+						this.mainForm = this.fb.group({
+							...
+							favorite_queen: ['80',Validators.required],
+							favorite_season: ['',Validators.required],
+							favorite_episode: ['']
+						})
+						```
+                    </script>
+				</section>
+				<section id="questions">
+					<h2>Questions?</h2>
+					<p>Slides available at: <a
+							href="https://angularforms.jenniferwadella.com/">angularforms.jenniferwadella.com</a></p>
+					<img class="plain" src="img/headtilt.gif" alt="">
+					<p>Need help with <span><img style="width:1.75em;margin:0;position: relative;top:.6em;" src="img/AngularJS-Shield.svg" alt="Angular"></span>? Work with me! <a href="mailto:jennifer@bitovi.com">jennifer@bitovi.com</a></p>
+				</section>
 			</div>
+		</div>
+		<div class="twitter-overlay">
+			<span class="accent">@likeOMGitsFEDAY</span> <span>#complicatedNGforms</span>
 		</div>
 
 		<script src="dist/reveal.js"></script>
 		<script src="plugin/notes/notes.js"></script>
 		<script src="plugin/markdown/markdown.js"></script>
 		<script src="plugin/highlight/highlight.js"></script>
-		<script>
-			// More info about initialization & config:
-			// - https://revealjs.com/initialization/
-			// - https://revealjs.com/config/
-			Reveal.initialize({
-				hash: true,
+		<script src="plugin/prism/prism.js"></script>
 
-				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+		<script>
+			Reveal.initialize({
+				width: 1280,
+				height: 800,
+				history: true,
+				display: 'block',
+				progress: true,
+				plugins: [RevealMarkdown, RevealHighlight],
+				dependencies: [
+					{ src: 'plugin/prism/prism.js', async: true }
+				]
 			});
 		</script>
 	</body>

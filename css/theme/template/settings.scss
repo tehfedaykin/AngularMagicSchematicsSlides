@@ -19,7 +19,7 @@ $headingColor: #eee;
 $headingLineHeight: 1.2;
 $headingLetterSpacing: normal;
 $headingTextTransform: uppercase;
-$headingTextShadow: none;
+$headingTextShadow: 1px 5px 8px #000;
 $headingFontWeight: normal;
 $heading1TextShadow: $headingTextShadow;
 
@@ -44,5 +44,5 @@ $selectionColor: #fff;
 	background: $backgroundColor;
 }
 
-$twitterColor: #fff;
+$twitterColor: rgb(26, 88, 135);
 $accentColor: #FF5E99;

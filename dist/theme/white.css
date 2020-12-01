@@ -24,7 +24,7 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
   --heading-text-transform: uppercase;
   --heading-text-shadow: none;
   --heading-font-weight: 600;
-  --heading1-text-shadow: none;
+  --heading1-text-shadow: 1px 5px 8px #000;
   --heading1-size: 2.5em;
   --heading2-size: 1.6em;
   --heading3-size: 1.3em;
@@ -92,7 +92,7 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
   font-size: 1em; }
 
 .reveal h1 {
-  text-shadow: none; }
+  text-shadow: 1px 5px 8px #000; }
 
 /*********************************************
  * OTHER

@@ -19,14 +19,14 @@
 $backgroundColor: #191919;
 
 $mainColor: #fff;
-$headingColor: #fff;
+$headingColor:#fff;
 
 $mainFontSize: 42px;
 $mainFont: 'Source Sans Pro', Helvetica, sans-serif;
 $headingFont: 'Source Sans Pro', Helvetica, sans-serif;
-$headingTextShadow: none;
+$headingTextShadow: 1px 3px 5px #000;
 $headingLetterSpacing: normal;
-$headingTextTransform: uppercase;
+$headingTextTransform: none;
 $headingFontWeight: 600;
 $linkColor: #42affa;
 $linkColorHover: lighten( $linkColor, 15% );
@@ -40,6 +40,13 @@ $heading4Size: 1.0em;
 // Change text colors against light slide backgrounds
 @include light-bg-text-color(#222);
 
+@mixin bodyBackground() {
+	background-color: $backgroundColor;
+  background-image: url("../../img/splash1.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top left;
+}
 
 // Theme template ------------------------------
 @import "../template/theme";

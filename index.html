@@ -127,18 +127,21 @@ No matter what the JavaScript framework flavor of choice is, a good understandin
 				<section id="operator" data-markdown="code/operator.md" data-separator="^\n\n\n"
 					data-separator-vertical="^\n\n" data-separator-notes="^Note:" data-charset="iso-8859-15" data-background-color="rgba(0, 0, 0, 0.5)">
 				</section>
-				<section id="state-management">
+				<section id="what-we-care-about" data-background-color="rgba(0, 0, 0, 0.5)">
+					<h2>What We Care About</h2>
+					<p>Controlling when pieces of our application state change, and getting notified of those changes.</p>
+				</section>
+				<section id="state-management" data-background-color="rgba(0, 0, 0, 0.5)">
 					<h1>State Management</h1>
 					<h6>An organized approached to maintaining the state of your application 
 						data in a way that can be written to and read from.</h6>
 				</section>
 				<section id="state-management-libs" data-background-color="rgba(0, 0, 0, 0.5)">
-					<h2>State Management Libraries</h2>
+					<h2>State Management Patterns/Libraries</h2>
 					<ul>
 						<li>Redux</li>
 						<li>NGRX</li>
 						<li>Akita</li>
-						<li>Immer</li>
 					</ul>
 				</section>
 				<section id="redux" data-background-color="rgba(0, 0, 0, 0.5)">
@@ -154,8 +157,23 @@ No matter what the JavaScript framework flavor of choice is, a good understandin
 				<section id="redux-demo" data-background-color="rgba(0, 0, 0, 0.5)">
 					<h2>Redux Demo Code</h2>
 				</section>
+				<section id="redux-createStore" data-markdown="code/redux-createStore.md" data-separator="^\n\n\n"
+					data-separator-vertical="^\n\n" data-separator-notes="^Note:" data-charset="iso-8859-15" data-background-color="rgba(0, 0, 0, 0.5)">
+				</section>
+				<section id="redux-action" data-markdown="code/redux-action.md" data-separator="^\n\n\n"
+					data-separator-vertical="^\n\n" data-separator-notes="^Note:" data-charset="iso-8859-15" data-background-color="rgba(0, 0, 0, 0.5)">
+				</section>
+				<section id="redux-reducer" data-markdown="code/redux-reducer.md" data-separator="^\n\n\n"
+					data-separator-vertical="^\n\n" data-separator-notes="^Note:" data-charset="iso-8859-15" data-background-color="rgba(0, 0, 0, 0.5)">
+				</section>
+				<section id="tools">
+					<h2>Redux Dev Tools</h2>
+					<img src="img/reduxdevtools.webp" alt="Redux Dev Tools demo">
+					<p><a href="https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd">Chrome Redux Dev Tools</a></p>
+				</section>
 				<section id="ngrx" data-background-color="rgba(0, 0, 0, 0.5)">
 					<h2>NGRX</h2>
+					<h6><a href="https://ngrx.io/guide/store">https://ngrx.io/guide/store</a></h6>
 					<h6>NgRx is a framework for building reactive applications in Angular.</h6>
 				</section>
 				<section id="ngrx-concepts" data-background-color="rgba(0, 0, 0, 0.5)">
@@ -170,8 +188,27 @@ No matter what the JavaScript framework flavor of choice is, a good understandin
 				<section id="ngrx-demo" data-background-color="rgba(0, 0, 0, 0.5)">
 					<h2>ngrx demo</h2>
 				</section>
+				<section id="ngrx-pros" data-background-color="rgba(0, 0, 0, 0.5)">
+					<h2>NGRX Pros</h2>
+					<ul>
+						<li>Great flow control</li>
+						<li>Fairly clear what logic should go where</li>
+						<li>Updating state with API data</li>
+						<li>Selectors!</li>
+						<li>Type safety!</li>
+					</ul>
+				</section>
+				<section id="ngrx-cons" data-background-color="rgba(0, 0, 0, 0.5)">
+					<h2>NGRX Cons</h2>
+					<ul>
+						<li>Large API</li>
+						<li>Docs aren't great</li>
+						<li>Intimidating learning curve</li>
+					</ul>
+				</section>
 				<section id="akita" data-background-color="rgba(0, 0, 0, 0.5)">
 					<h2>Akita</h2>
+					<h6><a href="https://datorama.github.io/akita/">https://datorama.github.io/akita/</a></h6>
 					<h6>Akita is a state management pattern, built on top of RxJS, which takes the idea of multiple data 
 						stores from Flux and the immutable updates from Redux, along with the concept of streaming data, 
 						to create the Observable Data Store model.</h6>
@@ -179,18 +216,49 @@ No matter what the JavaScript framework flavor of choice is, a good understandin
 				<section id="akita-demo" data-background-color="rgba(0, 0, 0, 0.5)">
 					<h2>Akita demo</h2>
 				</section>
-				<section id="immer" data-background-color="rgba(0, 0, 0, 0.5)">
-					<h2>Immer</h2>
-					<h6>A small JavaScript library that allows developers to work with immutable state in a more convenient way.</h6>
+				<section id="akita-pros" data-background-color="rgba(0, 0, 0, 0.5)">
+					<h2>Akita Pros</h2>
+					<ul>
+						<li>Minimalistic API</li>
+						<li>Fairly easy to understand</li>
+						<li>Some built in logic</li>
+					</ul>
 				</section>
-				<section id="immer-demo" data-background-color="rgba(0, 0, 0, 0.5)">
-					<h2>Immer demo</h2>
+				<section id="akita-cons" data-background-color="rgba(0, 0, 0, 0.5)">
+					<h2>Akita Cons</h2>
+					<ul>
+						<li>Subscription Management 😭</li>
+						<li>Not super clear where to put logic</li>
+					</ul>
 				</section>
 				<section id="diy" data-background-color="rgba(0, 0, 0, 0.5)">
 					<h2>DIY State Management with RxJS</h2>
 				</section>
 				<section id="subject-state-management" data-background-color="rgba(0, 0, 0, 0.5)">
-					<h2>Simple state management with BehaviorSubject</h2>
+					<h2>Simple State Management with BehaviorSubject</h2>
+				</section>
+				<section id="diy-pros-cons" data-background-color="rgba(0, 0, 0, 0.5)">
+					<h2>DYI Pros</h2>
+					<ul >
+						<li>No lib to install</li>
+						<li>No API to learn</li>
+						<li>May be easier to understand the <br />"whys" of RxJS/State Management</li>
+					</ul>
+					<div class="fragment">
+						<h2>DYI Cons</h2>
+						<ul>
+							<li>You have to do literally everything</li>
+							<li>Your RxJS knowledge better be on point</li>
+						</ul>
+					</div>
+				</section>
+				<section id="summary" data-background-color="rgba(0, 0, 0, 0.5)">
+					<h2>Summary</h2>
+					<ul>
+						<li>State Management is good</li>
+						<li>Choose an approach that works for you</li>
+						<li>Don't be scared of RxJS</li>
+					</ul>
 				</section>
 				<section id="questions" data-background-color="rgba(0, 0, 0, 0.5)">
 					<h2>Questions?</h2>
@@ -208,6 +276,7 @@ No matter what the JavaScript framework flavor of choice is, a good understandin
 		<script src="dist/reveal.js"></script>
 		<script src="plugin/notes/notes.js"></script>
 		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/notes/notes.js"></script>
 		<script src="plugin/highlight/highlight.js"></script>
 		<script src="plugin/prism/prism.js"></script>
 
@@ -218,7 +287,7 @@ No matter what the JavaScript framework flavor of choice is, a good understandin
 				history: true,
 				display: 'block',
 				progress: true,
-				plugins: [RevealMarkdown, RevealHighlight],
+				plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
 				dependencies: [
 					{ src: 'plugin/prism/prism.js', async: true }
 				]

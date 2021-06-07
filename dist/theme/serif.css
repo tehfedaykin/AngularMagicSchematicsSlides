@@ -254,14 +254,16 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
  * LINKS
  *********************************************/
 .reveal a {
-  color: #51483D;
+  color: #FF5E99;
   text-decoration: none;
-  transition: color .15s ease; }
+  transition: color .15s ease;
+  text-shadow: none; }
 
 .reveal a:hover {
   color: #8b7c69;
   text-shadow: none;
-  border: none; }
+  border: none;
+  text-decoration: underline; }
 
 .reveal .roll span:after {
   color: #fff;

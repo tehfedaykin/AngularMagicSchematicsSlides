@@ -4,7 +4,7 @@
  * By Hakim El Hattab, http://hakim.se
  */
 @import url(./fonts/source-sans-pro/source-sans-pro.css);
-@import url("https://fonts.googleapis.com/css2?family=Rock+Salt&family=Sedgwick+Ave&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sedgwick+Ave&display=swap");
 section.has-light-background, section.has-light-background h1, section.has-light-background h2, section.has-light-background h3, section.has-light-background h4, section.has-light-background h5, section.has-light-background h6 {
   color: #222; }
 
@@ -256,14 +256,16 @@ section.has-light-background, section.has-light-background h1, section.has-light
  * LINKS
  *********************************************/
 .reveal a {
-  color: #c91478;
+  color: #FF5E99;
   text-decoration: none;
-  transition: color .15s ease; }
+  transition: color .15s ease;
+  text-shadow: none; }
 
 .reveal a:hover {
   color: #ec3e9e;
   text-shadow: none;
-  border: none; }
+  border: none;
+  text-decoration: underline; }
 
 .reveal .roll span:after {
   color: #fff;

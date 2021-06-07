@@ -264,14 +264,17 @@
  *********************************************/
 
 .reveal a {
-	color: $linkColor;
+	color: $accentColor;
 	text-decoration: none;
 	transition: color .15s ease;
+	text-shadow: none;
+	//font-family: 'Open Sans';
 }
 	.reveal a:hover {
 		color: $linkColorHover;
 		text-shadow: none;
 		border: none;
+		text-decoration: underline;
 	}
 
 .reveal .roll span:after {

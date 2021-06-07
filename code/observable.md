@@ -11,10 +11,10 @@ const observable = Observable.create(function (observer) {
   observer.next(3);
 });
 
-function subscriber( value ){
-    console.log('got value ' + value);
-    // Logs 1, 2, 3
-}
-
-observable.subscribe( subscriber );
+observable.subscribe((value)  => {
+  console.log('got value ' + value);
+    // Logs "got value 1"
+    // Logs "got value 2"
+    // Logs "got value 3"
+});
 ```

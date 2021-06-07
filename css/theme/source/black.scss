@@ -13,22 +13,22 @@
 
 // Include theme-specific fonts
 @import url(./fonts/source-sans-pro/source-sans-pro.css);
-
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&family=Sedgwick+Ave&display=swap');
 
 // Override theme settings (see ../template/settings.scss)
-$backgroundColor: #191919;
+$backgroundColor: #FFE7E3;
 
-$mainColor: #fff;
-$headingColor:#fff;
+$mainColor: #ffffff;
+$headingColor:rgb(232, 143, 164);
 
 $mainFontSize: 42px;
-$mainFont: 'Source Sans Pro', Helvetica, sans-serif;
-$headingFont: 'Source Sans Pro', Helvetica, sans-serif;
+$mainFont: 'Sedgwick Ave', cursive, Helvetica, sans-serif;
+$headingFont: 'Sedgwick Ave', cursive, Helvetica, sans-serif;
 $headingTextShadow: 1px 3px 5px #000;
 $headingLetterSpacing: normal;
 $headingTextTransform: none;
 $headingFontWeight: 600;
-$linkColor: #42affa;
+$linkColor: #c91478;
 $linkColorHover: lighten( $linkColor, 15% );
 $selectionBackgroundColor: lighten( $linkColor, 25% );
 
@@ -42,10 +42,10 @@ $heading4Size: 1.0em;
 
 @mixin bodyBackground() {
 	background-color: $backgroundColor;
-  background-image: url("../../img/splash1.jpg");
+  background-image: url("../../img/croppedglass.jpg");
 	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: top left;
+	background-size:contain;
+	background-position: center right;
 }
 
 // Theme template ------------------------------

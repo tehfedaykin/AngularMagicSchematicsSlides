@@ -5,9 +5,9 @@ Similar to a Subject but will re-emit the last emitted value(or default value if
 ```typescript
 const {BehaviorSubject} = rxjs;
 
-var subject = new BehaviorSubject<String>();
+var subject = new BehaviorSubject<String>('');
 
-subject.next("THE PAST");
+subject.next('THE PAST');
 
 subject.subscribe((value) => console.log(value));
 // logs "THE PAST"

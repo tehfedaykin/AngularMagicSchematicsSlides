@@ -8,15 +8,13 @@
 No matter what the JavaScript framework flavor of choice is, a good understanding of reactive programming and state management helps us write better code that is more closely tied to business logic, is easier to read, easier to debug, and easier to scale.">
 	<meta name="keywords"
 		content="Jennifer Wadella, software engineer, women in tech speaker, female software engineer, female speaker, female founder, non-profit consultant, female coder, Kansas City Women in Technology, kcwit, kcwit founder, women engineers, girls in tech, women in tech, coding &amp; cocktails, coding &amp; cupcakes, CoderDojoKC">
-	<meta itemprop="name" content="Reactive Programming, State Management, 
-						and Redux for the Modern Front End Developer">
+	<meta itemprop="name" content="Reactive Programming Crash Course for Angular Baes">
 	<meta itemprop="description"
 		content="JavaScript can be a scary place where we create and change variables at will and while code can be written very quickly, it can be side-effect prone and hard to debug & maintain down the line. In this talk we’ll explore the concept of reactive programming, discuss state management and the benefits of having an immutable state, and cover one of the more popular state management approaches - the redux pattern, & look at commonly used libraries that help us with these concepts.
 
 No matter what the JavaScript framework flavor of choice is, a good understanding of reactive programming and state management helps us write better code that is more closely tied to business logic, is easier to read, easier to debug, and easier to scale.">
 	<meta itemprop="image" content="https://statemanagement.jenniferwadella.com//img/cover.png">
-	<meta property="og:title" content="Reactive Programming, State Management, 
-						and Redux for the Modern Front End Developer">
+	<meta property="og:title" content="Reactive Programming Crash Course for Angular Baes">
 	<meta property="og:type" content="website">
 	<meta property="og:image" content="https://statemanagement.jenniferwadella.com//img/cover.png">
 	<meta property="og:url" content="https://statemanagement.jenniferwadella.com/">
@@ -25,8 +23,7 @@ No matter what the JavaScript framework flavor of choice is, a good understandin
 
 No matter what the JavaScript framework flavor of choice is, a good understanding of reactive programming and state management helps us write better code that is more closely tied to business logic, is easier to read, easier to debug, and easier to scale.">
 	<meta property="twitter:card" content="summary">
-	<meta property="twitter:title" content="Reactive Programming, State Management, 
-						and Redux for the Modern Front End Developer">
+	<meta property="twitter:title" content="Reactive Programming Crash Course for Angular Baes">
 	<meta property="twitter:creator" content="@likeOMGitsFEDAY">
 	<meta property="twitter:image" content="https://statemanagement.jenniferwadella.com//img/cover.png">
 	<meta property="twitter:url" content="https://statemanagement.jenniferwadella.com/">
@@ -38,7 +35,7 @@ No matter what the JavaScript framework flavor of choice is, a good understandin
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
 
-		<title>Reactive Programming, State Management, & Redux for the Modern Front End Developer</title>
+		<title>Reactive Programming Crash Course for Angular Baes</title>
 
 		<link rel="stylesheet" href="dist/reset.css">
 		<link rel="stylesheet" href="dist/reveal.css">
@@ -53,9 +50,8 @@ No matter what the JavaScript framework flavor of choice is, a good understandin
 		<div class="reveal">
 			<div class="slides">
 				<section id="title">
-					<h1>Reactive Programming, State Management, 
-						& Redux for the Modern Front End Developer</h1>
-					<h6>Jennifer Wadella</h6>
+					<h1><br />Reactive Programming <br/>Crash Course</span> for <br />Angular Baes <3</h1>
+					<h6><span class="accent">Jennifer Wadella</span></h6>
 				</section>
 				<section id="me" data-background-color="rgba(0, 0, 0, 0.5)">
 					<div class="speaker-title">
@@ -87,33 +83,47 @@ No matter what the JavaScript framework flavor of choice is, a good understandin
 					<h2>MVC Approach</h2>
 					<p>Bidirectional data flow can affect application state in many places and be difficult to track.</p>
 				</section>
-				<section id="reactive-header">
-					<h1>Reactive Programming</h1>
-				</section>
 				<section id="imperative-vs-declarative" data-background-color="rgba(0, 0, 0, 0.5)">
 					<h2>Imperative vs. Declarative Programming</h2>
+				</section>
+				<section id="ternary" data-markdown="code/ternary.md" data-separator="^\n\n\n"
+					data-separator-vertical="^\n\n" data-separator-notes="^Note:" data-charset="iso-8859-15" data-background-color="rgba(0, 0, 0, 0.5)">
 				</section>
 				<section id="imperative-ex" data-background-color="rgba(0, 0, 0, 0.5)">
 					<h2>Imperative Approach</h2>
 					<h6>When events occur, code runs and changes the state of the program.</h6>
 				</section>
-				<section id="imperative-code" data-background-color="rgba(0, 0, 0, 0.5)">
-					<h2>Imperative Code</h2>
+				<section id="imperative-code" data-markdown="code/imperative-example.md" data-separator="^\n\n\n"
+					data-separator-vertical="^\n\n" data-separator-notes="^Note:" data-charset="iso-8859-15" data-background-color="rgba(0, 0, 0, 0.5)">
 				</section>
 				<section id="declarative-ex" data-background-color="rgba(0, 0, 0, 0.5)">
 					<h2>Declarative Approach</h2>
-					<h6>Specifying HOW the state of a program should be altered.</h6>
+					<p>Specifying HOW the state of a program should be altered.</p>
 				</section>
-				<section id="declarative-code" data-background-color="rgba(0, 0, 0, 0.5)">
-					<h2>Declarative Code</h2>
+				<section id="declarative-code" data-markdown="code/declarative-example.md" data-separator="^\n\n\n"
+					data-separator-vertical="^\n\n" data-separator-notes="^Note:" data-charset="iso-8859-15" data-background-color="rgba(0, 0, 0, 0.5)">
+				</section>
+				<section id="declarative-pros">
+					<h2>Declarative Programming Pros</h2>
+					<ul>
+						<li>Readability</li>
+						<li>Refactorability</li>
+						<li>Easier to track "state" change of the UI</li>
+					</ul>
 				</section>
 				<section id="reactive-programming" data-background-color="rgba(0, 0, 0, 0.5)">
 					<h2>Reactive Programming</h2>
-					<h6> A declarative programming style concerned with data “streams” and propagation of change.</h6>
+					<p>A declarative programming style concerned with data “streams” and propagation of change.</p>
+				</section>
+				<section id="reactive-code" data-markdown="code/reactive-example.md" data-separator="^\n\n\n"
+					data-separator-vertical="^\n\n" data-separator-notes="^Note:" data-charset="iso-8859-15" data-background-color="rgba(0, 0, 0, 0.5)">
+				</section>
+				<section id="async-pipe" data-markdown="code/async-pipe.md" data-separator="^\n\n\n"
+					data-separator-vertical="^\n\n" data-separator-notes="^Note:" data-charset="iso-8859-15" data-background-color="rgba(0, 0, 0, 0.5)">
 				</section>
 				<section id="rxjs" data-background-color="rgba(0, 0, 0, 0.5)">
 					<h2>RxJS</h2>
-					<h6>(Reactive Extensions for JavaScript) is a library for reactive programming using observables that makes it easier to compose asynchronous or callback-based code.</h6>
+					<p>(Reactive Extensions for JavaScript) is a library for reactive programming using Observables that makes it easier to compose asynchronous or callback-based code.</p>
 				</section>
 				<section id="observable" data-markdown="code/observable.md" data-separator="^\n\n\n"
 					data-separator-vertical="^\n\n" data-separator-notes="^Note:" data-charset="iso-8859-15" data-background-color="rgba(0, 0, 0, 0.5)">
@@ -124,154 +134,128 @@ No matter what the JavaScript framework flavor of choice is, a good understandin
 				<section id="behavior-subject" data-markdown="code/behavior-subject.md" data-separator="^\n\n\n"
 					data-separator-vertical="^\n\n" data-separator-notes="^Note:" data-charset="iso-8859-15" data-background-color="rgba(0, 0, 0, 0.5)">
 				</section>
-				<section id="operator" data-markdown="code/operator.md" data-separator="^\n\n\n"
-					data-separator-vertical="^\n\n" data-separator-notes="^Note:" data-charset="iso-8859-15" data-background-color="rgba(0, 0, 0, 0.5)">
+				<section id="observable-vs-subject">
+					<section id="when-to-use">
+						<h2>When to Use Observables vs Subjects</h2>
+						<p>- When we care about execution context</p>
+						<p>- When we need unidirectional data flow (preferably always)</p>
+					</section>
+					<section id="execution-context1" data-markdown="code/execution-context1.md" data-separator="^\n\n\n"
+						data-separator-vertical="^\n\n" data-separator-notes="^Note:" data-charset="iso-8859-15" data-background-color="rgba(0, 0, 0, 0.5)">
+					</section>
+					<section id="execution-context-angular" data-markdown="code/execution-context-angular.md" data-separator="^\n\n\n"
+						data-separator-vertical="^\n\n" data-separator-notes="^Note:" data-charset="iso-8859-15" data-background-color="rgba(0, 0, 0, 0.5)">
+					</section>
+					<section id="why-cant-i-next" data-background-color="rgba(0, 0, 0, 0.5)">
+						<h2>Why Can't I Just .next() All the Things?</h2> <br/>
+						<p>Cause then you're just imperatively programming with BehaviorSubjects, 
+							you gain no benefits with additional complexity.</p>
+							<p>Play with Stackblitz demo <a href="https://stackblitz.com/edit/reactive-crashcourse-demo?file=src/app/app.component.ts">here</a></p>
+					</section>
 				</section>
-				<section id="what-we-care-about" data-background-color="rgba(0, 0, 0, 0.5)">
-					<h2>What We Care About</h2>
-					<p>Controlling when pieces of our application state change, and getting notified of those changes.</p>
-				</section>
-				<section id="state-management" data-background-color="rgba(0, 0, 0, 0.5)">
-					<h1>State Management</h1>
-					<h6>An organized approached to maintaining the state of your application 
-						data in a way that can be written to and read from.</h6>
-				</section>
-				<section id="state-management-libs" data-background-color="rgba(0, 0, 0, 0.5)">
-					<h2>State Management <br />Patterns/Libraries</h2>
-					<ul>
-						<li>Redux</li>
-						<li>NGRX</li>
-						<li>Akita</li>
-					</ul>
-				</section>
-				<section id="redux" data-background-color="rgba(0, 0, 0, 0.5)">
-					<h2>Redux</h2>
-					<h6>A predictable state container for applications.
-						<br />Created by Dan Abramov in 2015</h6>
-				</section>
-				<section id="redux-concepts" data-background-color="rgba(0, 0, 0, 0.5)">
-					<h2>Redux 101</h2>
-					<p class="fragment"><b>Store:</b> An object tree representing the state of your application.</p>
-					<p class="fragment"><b>Action:</b> An object describing how to modify the state.</p>
-					<p class="fragment"><b>Reducer:</b> A function that returns a new state based on the action provided.</p>
-				</section>
-				<section id="redux-demo" data-background-color="rgba(0, 0, 0, 0.5)">
-					<h2>Redux Demo Code</h2>
-				</section>
-				<section id="redux-createStore" data-markdown="code/redux-createStore.md" data-separator="^\n\n\n"
-					data-separator-vertical="^\n\n" data-separator-notes="^Note:" data-charset="iso-8859-15" data-background-color="rgba(0, 0, 0, 0.5)">
-				</section>
-				<section id="redux-action" data-markdown="code/redux-action.md" data-separator="^\n\n\n"
-					data-separator-vertical="^\n\n" data-separator-notes="^Note:" data-charset="iso-8859-15" data-background-color="rgba(0, 0, 0, 0.5)">
-				</section>
-				<section id="redux-reducer" data-markdown="code/redux-reducer.md" data-separator="^\n\n\n"
-					data-separator-vertical="^\n\n" data-separator-notes="^Note:" data-charset="iso-8859-15" data-background-color="rgba(0, 0, 0, 0.5)">
-				</section>
-				<section id="tools">
-					<h2>Redux Dev Tools</h2>
-					<img src="img/reduxdevtools.webp" alt="Redux Dev Tools demo">
-					<p><a href="https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd">Chrome Redux Dev Tools</a></p>
-				</section>
-				<section id="ngrx" data-background-color="rgba(0, 0, 0, 0.5)">
-					<h2>NGRX</h2>
-					<h6><a href="https://ngrx.io/guide/store">https://ngrx.io/guide/store</a></h6>
-					<h6>NgRx is a framework for building reactive applications in Angular.</h6>
-				</section>
-				<section id="ngrx-concepts" data-background-color="rgba(0, 0, 0, 0.5)">
-					<ul>
-						<li class="fragment">Store - RxJS powered global state management for Angular apps, inspired by Redux.</li>
-						<li class="fragment">Effects - Side effect model for @ngrx/store.</li>
-						<li class="fragment">Router Store - Bindings to connect the Angular Router to @ngrx/store.</li>
-						<li class="fragment">Entity - Entity State adapter for managing record collections.</li>	
-						<li class="fragment">ComponentStore - Standalone library for managing local/component state.</li>	
-					</ul>
-				</section>
-				<section id="ngrx-demo" data-background-color="rgba(0, 0, 0, 0.5)">
-					<h2>ngrx demo</h2>
-				</section>
-				<section id="ngrx-pros" data-background-color="rgba(0, 0, 0, 0.5)">
-					<h2>NGRX Pros</h2>
-					<ul>
-						<li>Great flow control</li>
-						<li>Fairly clear what logic should go where</li>
-						<li>Updating state with API data</li>
-						<li>Selectors!</li>
-						<li>Type safety!</li>
-					</ul>
-				</section>
-				<section id="ngrx-cons" data-background-color="rgba(0, 0, 0, 0.5)">
-					<h2>NGRX Cons</h2>
-					<ul>
-						<li>Large API</li>
-						<li>Docs aren't great</li>
-						<li>Intimidating learning curve</li>
-					</ul>
-				</section>
-				<section id="akita" data-background-color="rgba(0, 0, 0, 0.5)">
-					<h2>Akita</h2>
-					<h6><a href="https://datorama.github.io/akita/">https://datorama.github.io/akita/</a></h6>
-					<h6>Akita is a state management pattern, built on top of RxJS, which takes the idea of multiple data 
-						stores from Flux and the immutable updates from Redux, along with the concept of streaming data, 
-						to create the Observable Data Store model.</h6>
-				</section>
-				<section id="akita-demo" data-background-color="rgba(0, 0, 0, 0.5)">
-					<h2>Akita demo</h2>
-				</section>
-				<section id="akita-pros" data-background-color="rgba(0, 0, 0, 0.5)">
-					<h2>Akita Pros</h2>
-					<ul>
-						<li>Minimalistic API</li>
-						<li>Fairly easy to understand</li>
-						<li>Some built in logic</li>
-					</ul>
-				</section>
-				<section id="akita-cons" data-background-color="rgba(0, 0, 0, 0.5)">
-					<h2>Akita Cons</h2>
-					<ul>
-						<li>Subscription Management 😭</li>
-						<li>Not super clear where to put logic</li>
-					</ul>
-				</section>
-				<section id="diy" data-background-color="rgba(0, 0, 0, 0.5)">
-					<h2>DIY State Management with RxJS</h2>
-				</section>
-				<section id="subject-state-management" data-background-color="rgba(0, 0, 0, 0.5)">
-					<h2>Simple State Management with BehaviorSubject</h2>
-				</section>
-				<section id="diy-pros-cons" data-background-color="rgba(0, 0, 0, 0.5)">
-					<h2>DYI Pros</h2>
-					<ul >
-						<li>No lib to install</li>
-						<li>No API to learn</li>
-						<li>May be easier to understand the <br />"whys" of RxJS/State Management</li>
-					</ul>
-					<div class="fragment">
-						<h2>DYI Cons</h2>
+				<section id="operators">
+					<section id="operator" data-markdown="code/operator.md" data-separator="^\n\n\n"
+						data-separator-vertical="^\n\n" data-separator-notes="^Note:" data-charset="iso-8859-15" data-background-color="rgba(0, 0, 0, 0.5)">
+					</section>
+					<section id="operator-types" data-background-color="rgba(0, 0, 0, 0.5)">
+						<h2>Operators Types</h2>
 						<ul>
-							<li>You have to do literally everything</li>
-							<li>Your RxJS knowledge better be on point</li>
+							<li class="fragment"><span class="accent">Combinational:</span> combineLatest, merge, forkJoin, startWith</li>
+							<li class="fragment"><span class="accent">Creational:</span> from, fromEvent, of</li>
+							<li class="fragment"><span class="accent">Multicasting:</span> publish, multicast, shareReplay</li>
+							<li class="fragment"><span class="accent">Filtering:</span> distinctUntilChanged, filter, first, last, takeUntil</li>
+							<li class="fragment"><span class="accent">Transformational:</span> map, mapTo, switchMap, scan</li>
 						</ul>
-					</div>
+					</section>
+				</section>
+				
+				<section id="what-we-care-about" data-background-color="rgba(0, 0, 0, 0.5)">
+					<h2><span class="accent">Reactive Programming in Angular:</span> <br />What We Care About</h2>
+					<p>- Creating unidirectional data flow.</p>
+					<p>- Controlling when pieces of our application state change, and getting notified of those changes.</p>
+				</section>
+				<section id="demo">
+					<h2>App Demo</h2>
+					<img src="img/freckles.png" alt="Freckles from Animal Crossing">
+				</section>
+				<section id="reactive-refactor">
+					<h1>Refactor Time:</h1>
+					<p>Let's get <span class="accent">Reactive</span></p>
 				</section>
 				<section id="summary" data-background-color="rgba(0, 0, 0, 0.5)">
 					<h2>Summary</h2>
 					<ul>
-						<li>State Management is good</li>
-						<li>Choose an approach that works for you</li>
-						<li>Don't be scared of RxJS</li>
+						<li><span class="accent">Created</span> stream from <span class="accent">HttpClient</span> returned Observable</li>
+						<li><span class="accent">Merged</span> streams from HttpClient and ReactiveForms Observables</li>
+						<li>Created streams <span class="accent">from click events</span></li>
+						<li><span class="accent">Manipulated</span> streams & <span class="accent">merged multiple</span> streams</li>
+						<li>Used operators to <span class="accent">multicast</span> Observables</li>
 					</ul>
 				</section>
-				<section id="questions" data-background-color="rgba(0, 0, 0, 0.5)">
+				<section id="mistakes">
+					<h2>Beginner Mistakes in Reactive Programming</h2>
+					<ul>
+						<li>Recreating streams</li>
+						<li>Imperative Coding with Behavior Subjects</li>
+					</ul>
+				</section>
+				<section id="reactive-tips">
+					<section>
+						<h2><span class="accent">Jennifer's</span> <br />Reactive Programming <br /><span class="accent">Tips</span></h2>
+					</section>
+					<section id="tip1" data-background-color="rgba(0, 0, 0, 0.3)">
+						<h2><span class="accent">Tip #1</span> - Think Backwards. </h2>
+						<p>Start with what you want to <span class="accent">display in the UI</span>. List the different things that 
+							would cause that things state to change. </p>
+							<p><span class="fragment accent">API response?</span><span class="fragment accent">Interaction events?</span></p>
+					</section>
+					<section id="tip2" data-background-color="rgba(0, 0, 0, 0.3)">
+						<h2><span class="accent">Tip #2</span> - Let TypeScript Help You</h2>
+						<p>Streams are very <span class="accent">abstract</span> and can be hard to visualize until you've created a solid mental model. 
+							Add the <span class="accent">Type of the value</span> you want your stream to ultimately display in the UI, and let the errors help you learn how operators work.
+						</p>
+					</section>
+					<section id="tip3" data-background-color="rgba(0, 0, 0, 0.3)">
+						<h2><span class="accent">Tip #3</span> - Be chonky.</h2>
+						<p>Just throw all your logic in that first <span class="accent">map function</span> once you have all your streams, <span class="accent">return what you 
+							need to display</span>. As you get more comfortable, break pieces apart.</p>
+					</section>
+					<section id="tip4" data-background-color="rgba(0, 0, 0, 0.3)">
+						<h2><span class="accent">Tip #4</span> - Start with a Few Operators</h2>
+						<p>There's a ton of operators(in RxJS < 7, anyway). Get comfortable with <span class="accent">a few</span> at first. </p>
+						<p>Operator Decision Tree: <br /><a href="https://rxjs.dev/operator-decision-tree">https://rxjs.dev/operator-decision-tree</a></p>
+					</section>
+					<section id="tip5" data-background-color="rgba(0, 0, 0, 0.3)">
+						<h2><span class="accent">Tip #5</span> - Work Towards Breaking Apart Your Streams</h2>
+						<p>Start pulling your streams into <span class="accent">separate consts</span>, and bringing them into Combinational operators separately. 
+							You'll be able to <span class="accent">see patterns</span> more easily and <span class="accent">create more composability</span> as you get more comfortable.</p>
+					</section>
+				</section>
+				<section id="code-smells">
+					<h2>Code Smells</h2>
+					<p class="fragment">- Nested subscriptions</p>
+					<p class="fragment">- Imperative logic in subscription functions</p>
+					<p class="fragment">- Not unsubscribing</p>
+					<p class="fragment">- Imperative logic in tap operations*</p>
+
+					<p class="small fragment"><br />*Sometimes this <span class="accent">can't</span>  be avoided - <br />
+						like launching modals/toasts, or dealing with not-truly-reactive-reactive-forms</p>
+				</section>
+				<section id="practice-reactive">
+					<h2>Reactive Programming is Hard, Ya'll.</h2>
+					<p>Practice, practice, practice.</p>
+				</section>
+				<section id="questions" data-background-color="rgba(0, 0, 0, 0.2)">
 					<h2>Questions?</h2>
-					<p>Slides available at: <a
-							href="https://statemanagement.jenniferwadella.com/">statemanagement.jenniferwadella.com</a></p>
+					<p>Slides available at: <br />
+					<a href="https://reactiveprogrammingforangularbaes.jenniferwadella.com/">reactiveprogrammingforangularbaes.jenniferwadella.com</a></p>
 					<img class="plain" src="img/headtilt.gif" alt="">
 					<p>Need help with <span><img style="width:1.75em;margin:0;position: relative;top:.6em;" src="img/angular.png" alt="Angular"></span>? Work with me! <a href="mailto:jennifer@bitovi.com">jennifer@bitovi.com</a></p>
 				</section>
 			</div>
 		</div>
 		<div class="twitter-overlay">
-			<span class="accent">@likeOMGitsFEDAY</span> <span>#statemanagement101</span>
+			<span class="accent">@likeOMGitsFEDAY</span> <span>#reactiveProgrammingCrashCourse</span>
 		</div>
 
 		<script src="dist/reveal.js"></script>

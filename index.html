@@ -3,31 +3,46 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="description"
-		content="What is Reactive Programming and why do people keep talking about it? Why can't I just call .subscribe() in my Angular component, assign to a variable, and go on my merry way? If you've asked yourself these questions lately, I invite you to come on a journey with me and discover the joys (and power) of Reactive Programming in this live code-a-long demo.">
+		content="Everyone wants to ship more software faster, and following the lead of the MicroServices craze 
+		the front-end community has begun to reach for Micro Frontends as a silver bullet solution. Micro Frontends 
+		promise large teams the ability to independently ship pieces of applications without code collisions, bug 
+		creation, that can be team-agnostic, and with Webpack 5 leaning in to offer Module Federation, this seems to 
+		be the way of the future. But what problems aren't solved by Micro Frontends? There is a large gap in what 
+		large complex teams need to ship better software and what Micro Frontends are able to provide ... and that 
+		gap is the basis of this talk. We'll discuss what Micro Frontends are, approaches and tools to using this 
+		architecture pattern, and discuss the consequences that arise that no on seems to want to talk about.
+
+">
 	<meta name="keywords"
 		content="Jennifer Wadella, software engineer, women in tech speaker, female software engineer, female speaker, female founder, non-profit consultant, female coder, Kansas City Women in Technology, kcwit, kcwit founder, women engineers, girls in tech, women in tech, coding &amp; cocktails, coding &amp; cupcakes, CoderDojoKC">
-	<meta itemprop="name" content="Reactive Programming Crash Course for Angular Baes">
+	<meta itemprop="name" content="The Problems Micro Frontends Won't Solve That No One Wants to Talk About">
 	<meta itemprop="description"
-		content="What is Reactive Programming and why do people keep talking about it? Why can't I just call .subscribe() in my Angular component, assign to a variable, and go on my merry way? If you've asked yourself these questions lately, I invite you to come on a journey with me and discover the joys (and power) of Reactive Programming in this live code-a-long demo.">
+		content="Everyone wants to ship more software faster, and following the lead of the MicroServices craze the front-end community has begun to reach for Micro Frontends as a silver bullet solution. Micro Frontends promise large teams the ability to independently ship pieces of applications without code collisions, bug creation, that can be team-agnostic, and with Webpack 5 leaning in to offer Module Federation, this seems to be the way of the future. But what problems aren't solved by Micro Frontends? There is a large gap in what large complex teams need to ship better software and what Micro Frontends are able to provide ... and that gap is the basis of this talk. We'll discuss what Micro Frontends are, approaches and tools to using this architecture pattern, and discuss the consequences that arise that no on seems to want to talk about.
+
+">
 	<meta itemprop="image" content="https://reactiveprogrammingforangularbaes.jenniferwadella.com/img/cover.png">
-	<meta property="og:title" content="Reactive Programming Crash Course for Angular Baes">
+	<meta property="og:title" content="The Problems Micro Frontends Won't Solve That No One Wants to Talk About">
 	<meta property="og:type" content="website">
 	<meta property="og:image" content="https://reactiveprogrammingforangularbaes.jenniferwadella.com/img/cover.png">
 	<meta property="og:url" content="https://reactiveprogrammingforangularbaes.jenniferwadella.com/">
 	<meta property="og:description"
-		content="What is Reactive Programming and why do people keep talking about it? Why can't I just call .subscribe() in my Angular component, assign to a variable, and go on my merry way? If you've asked yourself these questions lately, I invite you to come on a journey with me and discover the joys (and power) of Reactive Programming in this live code-a-long demo.">
+		content="Everyone wants to ship more software faster, and following the lead of the MicroServices craze the front-end community has begun to reach for Micro Frontends as a silver bullet solution. Micro Frontends promise large teams the ability to independently ship pieces of applications without code collisions, bug creation, that can be team-agnostic, and with Webpack 5 leaning in to offer Module Federation, this seems to be the way of the future. But what problems aren't solved by Micro Frontends? There is a large gap in what large complex teams need to ship better software and what Micro Frontends are able to provide ... and that gap is the basis of this talk. We'll discuss what Micro Frontends are, approaches and tools to using this architecture pattern, and discuss the consequences that arise that no on seems to want to talk about.
+
+">
 	<meta property="twitter:card" content="summary">
-	<meta property="twitter:title" content="Reactive Programming Crash Course for Angular Baes">
+	<meta property="twitter:title" content="The Problems Micro Frontends Won't Solve That No One Wants to Talk About">
 	<meta property="twitter:creator" content="@likeOMGitsFEDAY">
 	<meta property="twitter:image" content="https://reactiveprogrammingforangularbaes.jenniferwadella.com/img/cover.png">
 	<meta property="twitter:url" content="https://reactiveprogrammingforangularbaes.jenniferwadella.com/">
 	<meta property="twitter:description"
-		content="What is Reactive Programming and why do people keep talking about it? Why can't I just call .subscribe() in my Angular component, assign to a variable, and go on my merry way? If you've asked yourself these questions lately, I invite you to come on a journey with me and discover the joys (and power) of Reactive Programming in this live code-a-long demo.">
+		content="Everyone wants to ship more software faster, and following the lead of the MicroServices craze the front-end community has begun to reach for Micro Frontends as a silver bullet solution. Micro Frontends promise large teams the ability to independently ship pieces of applications without code collisions, bug creation, that can be team-agnostic, and with Webpack 5 leaning in to offer Module Federation, this seems to be the way of the future. But what problems aren't solved by Micro Frontends? There is a large gap in what large complex teams need to ship better software and what Micro Frontends are able to provide ... and that gap is the basis of this talk. We'll discuss what Micro Frontends are, approaches and tools to using this architecture pattern, and discuss the consequences that arise that no on seems to want to talk about.
+
+">
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
 
-		<title>Reactive Programming Crash Course for Angular Baes</title>
+		<title>The Problems Micro Frontends Won't Solve That No One Wants to Talk About</title>
 
 		<link rel="stylesheet" href="dist/reset.css">
 		<link rel="stylesheet" href="dist/reveal.css">
@@ -42,7 +57,7 @@
 		<div class="reveal">
 			<div class="slides">
 				<section id="title">
-					<h1><br />Reactive Programming <br/>Crash Course</span> for <br />Angular Baes <3</h1>
+					<h1>The Problems Micro Frontends Won't Solve That No One Wants to Talk About</h1>
 					<h6><span class="accent">Jennifer Wadella</span></h6>
 				</section>
 				<section id="me" data-background-color="rgba(0, 0, 0, 0.5)">

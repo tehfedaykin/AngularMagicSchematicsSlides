@@ -117,6 +117,7 @@
 	text-align: left;
 	margin: 0 0 0 1em;
 	text-shadow: $headingTextShadow;
+	
 }
 
 .reveal ol {
@@ -124,10 +125,17 @@
 }
 
 .reveal ul {
-	list-style-type: disc;
+	list-style-type: none;
 	//text-shadow: $headingTextShadow;
 
 }
+
+.reveal ul li {
+	margin-bottom: .75em;
+}
+
+.reveal ul li:before { content: '🌱'; margin-left: -20px; margin-right: 10px; } 
+
 
 .reveal ul ul {
 	list-style-type: square;

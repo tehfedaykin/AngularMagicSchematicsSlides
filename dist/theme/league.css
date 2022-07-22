@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /**
  * League theme for reveal.js.
  *
@@ -35,7 +36,7 @@ section.has-light-background, section.has-light-background h1, section.has-light
   --code-font: monospace;
   --link-color: #91ebf4;
   --link-color-hover: #eefcfd;
-  --selection-background-color: #FF5E99;
+  --selection-background-color: #397dd0;
   --selection-color: #fff; }
 
 .reveal-viewport {
@@ -56,12 +57,12 @@ section.has-light-background, section.has-light-background h1, section.has-light
 
 .reveal ::selection {
   color: #fff;
-  background: #FF5E99;
+  background: #397dd0;
   text-shadow: none; }
 
 .reveal ::-moz-selection {
   color: #fff;
-  background: #FF5E99;
+  background: #397dd0;
   text-shadow: none; }
 
 .reveal .slides section,
@@ -149,7 +150,15 @@ section.has-light-background, section.has-light-background h1, section.has-light
   list-style-type: decimal; }
 
 .reveal ul {
-  list-style-type: disc; }
+  list-style-type: none; }
+
+.reveal ul li {
+  margin-bottom: .75em; }
+
+.reveal ul li:before {
+  content: '🌱';
+  margin-left: -20px;
+  margin-right: 10px; }
 
 .reveal ul ul {
   list-style-type: square; }
@@ -260,7 +269,7 @@ section.has-light-background, section.has-light-background h1, section.has-light
  * LINKS
  *********************************************/
 .reveal a {
-  color: #FF5E99;
+  color: #8CA71D;
   text-decoration: none;
   transition: color .15s ease;
   text-shadow: none; }
@@ -310,4 +319,4 @@ section.has-light-background, section.has-light-background h1, section.has-light
     background-color: #2b2b2b; } }
 
 .accent {
-  color: #FF5E99; }
+  color: #8CA71D; }

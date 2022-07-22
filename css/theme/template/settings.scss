@@ -35,7 +35,7 @@ $linkColor: #91ebf4;
 $linkColorHover: lighten( $linkColor, 20% );
 
 // Text selection
-$selectionBackgroundColor: #FF5E99;
+$selectionBackgroundColor: #397dd0;
 $selectionColor: #fff;
 
 // Generates the presentation background, can be overridden
@@ -44,5 +44,5 @@ $selectionColor: #fff;
 	background: $backgroundColor;
 }
 
-$twitterColor: #c91478;
-$accentColor: #FF5E99;
+$twitterColor: #8CA71D;
+$accentColor: #8CA71D;

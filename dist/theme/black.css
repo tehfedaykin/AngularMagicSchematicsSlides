@@ -1,10 +1,11 @@
+@charset "UTF-8";
 /**
  * Black theme for reveal.js. This is the opposite of the 'white' theme.
  *
  * By Hakim El Hattab, http://hakim.se
  */
 @import url(./fonts/source-sans-pro/source-sans-pro.css);
-@import url("https://fonts.googleapis.com/css2?family=Sedgwick+Ave&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;700;900&display=swap");
 section.has-light-background, section.has-light-background h1, section.has-light-background h2, section.has-light-background h3, section.has-light-background h4, section.has-light-background h5, section.has-light-background h6 {
   color: #222; }
 
@@ -13,13 +14,13 @@ section.has-light-background, section.has-light-background h1, section.has-light
  *********************************************/
 :root {
   --background-color: #FFE7E3;
-  --main-font: Sedgwick Ave, cursive, Helvetica, sans-serif;
+  --main-font: Poppins, sans-serif, Helvetica, sans-serif;
   --main-font-size: 42px;
   --main-color: #ffffff;
   --block-margin: 20px;
   --heading-margin: 0 0 20px 0;
-  --heading-font: Sedgwick Ave, cursive, Helvetica, sans-serif;
-  --heading-color: #e88fa4;
+  --heading-font: Poppins, sans-serif, Helvetica, sans-serif;
+  --heading-color: #e8ebdc;
   --heading-line-height: 1.2;
   --heading-letter-spacing: normal;
   --heading-text-transform: none;
@@ -31,33 +32,33 @@ section.has-light-background, section.has-light-background h1, section.has-light
   --heading3-size: 1.3em;
   --heading4-size: 1em;
   --code-font: monospace;
-  --link-color: #c91478;
-  --link-color-hover: #ec3e9e;
-  --selection-background-color: #f06cb5;
+  --link-color: #8CA71D;
+  --link-color-hover: #bbdc35;
+  --selection-background-color: #cae360;
   --selection-color: #fff; }
 
 .reveal-viewport {
   background-color: #FFE7E3;
-  background-image: url("../../img/croppedglass.jpg");
+  background-image: url("../../img/growth5.jpg");
   background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center right;
+  background-size: cover;
+  background-position: center left;
   background-color: #FFE7E3; }
 
 .reveal {
-  font-family: "Sedgwick Ave", cursive, Helvetica, sans-serif;
+  font-family: "Poppins", sans-serif, Helvetica, sans-serif;
   font-size: 42px;
   font-weight: normal;
   color: #ffffff; }
 
 .reveal ::selection {
   color: #fff;
-  background: #f06cb5;
+  background: #cae360;
   text-shadow: none; }
 
 .reveal ::-moz-selection {
   color: #fff;
-  background: #f06cb5;
+  background: #cae360;
   text-shadow: none; }
 
 .reveal .slides section,
@@ -75,8 +76,8 @@ section.has-light-background, section.has-light-background h1, section.has-light
 .reveal h5,
 .reveal h6 {
   margin: 0 0 20px 0;
-  color: #e88fa4;
-  font-family: "Sedgwick Ave", cursive, Helvetica, sans-serif;
+  color: #e8ebdc;
+  font-family: "Poppins", sans-serif, Helvetica, sans-serif;
   font-weight: 600;
   line-height: 1.2;
   letter-spacing: normal;
@@ -145,7 +146,15 @@ section.has-light-background, section.has-light-background h1, section.has-light
   list-style-type: decimal; }
 
 .reveal ul {
-  list-style-type: disc; }
+  list-style-type: none; }
+
+.reveal ul li {
+  margin-bottom: .75em; }
+
+.reveal ul li:before {
+  content: '🌱';
+  margin-left: -20px;
+  margin-right: 10px; }
 
 .reveal ul ul {
   list-style-type: square; }
@@ -256,20 +265,20 @@ section.has-light-background, section.has-light-background h1, section.has-light
  * LINKS
  *********************************************/
 .reveal a {
-  color: #FF5E99;
+  color: #8CA71D;
   text-decoration: none;
   transition: color .15s ease;
   text-shadow: none; }
 
 .reveal a:hover {
-  color: #ec3e9e;
+  color: #bbdc35;
   text-shadow: none;
   border: none;
   text-decoration: underline; }
 
 .reveal .roll span:after {
   color: #fff;
-  background: #830d4e; }
+  background: #556612; }
 
 /*********************************************
  * Frame helper
@@ -282,21 +291,21 @@ section.has-light-background, section.has-light-background h1, section.has-light
   transition: all .15s linear; }
 
 .reveal a:hover .r-frame {
-  border-color: #c91478;
+  border-color: #8CA71D;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.55); }
 
 /*********************************************
  * NAVIGATION CONTROLS
  *********************************************/
 .reveal .controls {
-  color: #c91478; }
+  color: #8CA71D; }
 
 /*********************************************
  * PROGRESS BAR
  *********************************************/
 .reveal .progress {
   background: rgba(0, 0, 0, 0.2);
-  color: #c91478; }
+  color: #8CA71D; }
 
 /*********************************************
  * PRINT BACKGROUND
@@ -306,7 +315,7 @@ section.has-light-background, section.has-light-background h1, section.has-light
     background-color: #FFE7E3; } }
 
 .accent {
-  color: #FF5E99; }
+  color: #8CA71D; }
 
 .twitter-overlay {
   position: absolute;
@@ -316,11 +325,11 @@ section.has-light-background, section.has-light-background h1, section.has-light
   width: 50%; }
   .twitter-overlay span {
     font-family: 'Source Sans Pro', Helvetica, sans-serif;
-    color: #c91478;
+    color: #8CA71D;
     margin-right: 2.5%;
     float: right;
     font-size: 1.25em;
-    text-shadow: 0px 0px 5px white; }
+    text-shadow: 1px 1px 3px #050505; }
 
 .speaker-title {
   display: flex; }
@@ -370,9 +379,36 @@ section.has-light-background, section.has-light-background h1, section.has-light
 
 .reveal pre code {
   font-size: 125%;
-  border: solid 1px #FF5E99;
+  border: solid 1px #8CA71D;
   padding: 1em;
   border-radius: .25em; }
 
-#title h1 {
-  text-align: left; }
+.reveal blockquote {
+  padding: 1em;
+  border-radius: 5px;
+  background: rgba(5, 5, 5, 0.358);
+  box-shadow: 0px 0px 2px black; }
+
+.side-by-side {
+  display: flex; }
+  .side-by-side .left {
+    display: flex;
+    float: left;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    flex-direction: column; }
+  .side-by-side .right {
+    flex: 1;
+    display: block;
+    float: right; }
+    .side-by-side .right ul {
+      font-size: 80%; }
+      .side-by-side .right ul li {
+        margin-bottom: 1em; }
+
+.reveal h2 {
+  margin-bottom: 1em; }
+
+.reveal h3 {
+  color: #8CA71D; }

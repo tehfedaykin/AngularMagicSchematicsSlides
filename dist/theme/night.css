@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /**
  * Black theme for reveal.js.
  *
@@ -141,7 +142,15 @@ section.has-light-background, section.has-light-background h1, section.has-light
   list-style-type: decimal; }
 
 .reveal ul {
-  list-style-type: disc; }
+  list-style-type: none; }
+
+.reveal ul li {
+  margin-bottom: .75em; }
+
+.reveal ul li:before {
+  content: '🌱';
+  margin-left: -20px;
+  margin-right: 10px; }
 
 .reveal ul ul {
   list-style-type: square; }
@@ -252,7 +261,7 @@ section.has-light-background, section.has-light-background h1, section.has-light
  * LINKS
  *********************************************/
 .reveal a {
-  color: #FF5E99;
+  color: #8CA71D;
   text-decoration: none;
   transition: color .15s ease;
   text-shadow: none; }
@@ -302,4 +311,4 @@ section.has-light-background, section.has-light-background h1, section.has-light
     background-color: #111; } }
 
 .accent {
-  color: #FF5E99; }
+  color: #8CA71D; }

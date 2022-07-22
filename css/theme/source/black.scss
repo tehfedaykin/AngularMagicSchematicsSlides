@@ -13,22 +13,20 @@
 
 // Include theme-specific fonts
 @import url(./fonts/source-sans-pro/source-sans-pro.css);
-@import url('https://fonts.googleapis.com/css2?family=Sedgwick+Ave&display=swap');
-
-// Override theme settings (see ../template/settings.scss)
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;700;900&display=swap');// Override theme settings (see ../template/settings.scss)
 $backgroundColor: #FFE7E3;
 
 $mainColor: #ffffff;
-$headingColor:rgb(232, 143, 164);
+$headingColor: #e8ebdc;
 
 $mainFontSize: 42px;
-$mainFont: 'Sedgwick Ave', cursive, Helvetica, sans-serif;
-$headingFont: 'Sedgwick Ave', cursive, Helvetica, sans-serif;
+$mainFont: 'Poppins', sans-serif, Helvetica, sans-serif;
+$headingFont: 'Poppins', sans-serif, Helvetica, sans-serif;
 $headingTextShadow: 1px 3px 5px #000;
 $headingLetterSpacing: normal;
 $headingTextTransform: none;
 $headingFontWeight: 600;
-$linkColor: #c91478;
+$linkColor: #8CA71D;
 $linkColorHover: lighten( $linkColor, 15% );
 $selectionBackgroundColor: lighten( $linkColor, 25% );
 
@@ -42,10 +40,10 @@ $heading4Size: 1.0em;
 
 @mixin bodyBackground() {
 	background-color: $backgroundColor;
-  background-image: url("../../img/croppedglass.jpg");
+  background-image: url("../../img/growth5.jpg");
 	background-repeat: no-repeat;
-	background-size:contain;
-	background-position: center right;
+	background-size:cover;
+	background-position: center left;
 }
 
 // Theme template ------------------------------

@@ -150,7 +150,7 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
   margin-bottom: .75em; }
 
 .reveal ul li:before {
-  content: '🌱';
+  content: '✨';
   margin-left: -20px;
   margin-right: 10px; }
 
@@ -263,7 +263,7 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
  * LINKS
  *********************************************/
 .reveal a {
-  color: #8CA71D;
+  color: #dc991d;
   text-decoration: none;
   transition: color .15s ease;
   text-shadow: none; }
@@ -313,4 +313,4 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
     background-color: #fff; } }
 
 .accent {
-  color: #8CA71D; }
+  color: #dc991d; }

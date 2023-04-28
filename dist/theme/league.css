@@ -156,7 +156,7 @@ section.has-light-background, section.has-light-background h1, section.has-light
   margin-bottom: .75em; }
 
 .reveal ul li:before {
-  content: '🌱';
+  content: '✨';
   margin-left: -20px;
   margin-right: 10px; }
 
@@ -269,7 +269,7 @@ section.has-light-background, section.has-light-background h1, section.has-light
  * LINKS
  *********************************************/
 .reveal a {
-  color: #8CA71D;
+  color: #dc991d;
   text-decoration: none;
   transition: color .15s ease;
   text-shadow: none; }
@@ -319,4 +319,4 @@ section.has-light-background, section.has-light-background h1, section.has-light
     background-color: #2b2b2b; } }
 
 .accent {
-  color: #8CA71D; }
+  color: #dc991d; }

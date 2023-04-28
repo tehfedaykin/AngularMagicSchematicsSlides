@@ -14,7 +14,7 @@
 // Include theme-specific fonts
 @import url(./fonts/source-sans-pro/source-sans-pro.css);
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;700;900&display=swap');// Override theme settings (see ../template/settings.scss)
-$backgroundColor: #FFE7E3;
+$backgroundColor: #100f0f;
 
 $mainColor: #ffffff;
 $headingColor: #e8ebdc;
@@ -26,7 +26,7 @@ $headingTextShadow: 1px 3px 5px #000;
 $headingLetterSpacing: normal;
 $headingTextTransform: none;
 $headingFontWeight: 600;
-$linkColor: #8CA71D;
+$linkColor: #dc991d;
 $linkColorHover: lighten( $linkColor, 15% );
 $selectionBackgroundColor: lighten( $linkColor, 25% );
 
@@ -40,10 +40,10 @@ $heading4Size: 1.0em;
 
 @mixin bodyBackground() {
 	background-color: $backgroundColor;
-  background-image: url("../../img/growth5.jpg");
+  	background-image: url("../../img/elena-mozhvilo-JWtNpyXy-fQ-unsplash.jpg");
 	background-repeat: no-repeat;
 	background-size:cover;
-	background-position: center left;
+	background-position: bottom center;
 }
 
 // Theme template ------------------------------
